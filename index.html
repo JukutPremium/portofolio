@@ -7,6 +7,7 @@
     <title>Shaka Pratama | Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
@@ -17,8 +18,7 @@
         <!-- Mobile menu button -->
         <div class="md:hidden">
             <button id="menu-btn" class="text-gray-700 focus:outline-none">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
@@ -31,10 +31,10 @@
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#project" class="nav-link">Project</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Project</a>
+                    <a href="#skills" class="nav-link">Skills</a>
                 </li>
             </ul>
         </nav>
@@ -54,14 +54,13 @@
                 <a href="#home" class="mobile-link block w-full py-4 hover:bg-gray-100">Home</a>
             </li>
             <li class="w-full text-center">
-                <a href="#" class="mobile-link block w-full py-4 hover:bg-gray-100">About</a>
+                <a href="#project" class="mobile-link block w-full py-4 hover:bg-gray-100">Project</a>
             </li>
             <li class="w-full text-center">
-                <a href="#" class="mobile-link block w-full py-4 hover:bg-gray-100">Project</a>
+                <a href="#skills" class="mobile-link block w-full py-4 hover:bg-gray-100">Skills</a>
             </li>
             <li class="w-full text-center px-4 mt-4">
-                <button
-                    class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300 w-full">
+                <button class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300 w-full">
                     Contact
                 </button>
             </li>
@@ -74,46 +73,32 @@
         <div class="bg-white w-full md:w-1/2 h-full flex items-center justify-center">
             <div class="mx-8 md:mx-16 text-center">
                 <!-- Profile Image for Mobile/Tablets -->
-                <img src="assets/photomobile.png" class="md:hidden h-32 w-32 rounded-full mx-auto"
-                    alt="Profile Image" />
+                <img src="assets/photomobile.png" class="md:hidden h-32 w-32 rounded-full mx-auto" alt="Profile Image" />
 
-                <h1 class="text-4xl md:text-6xl font-bold mt-4 md:mt-16">
-                    Shaka Pratama.
-                </h1>
+                <h1 class="text-4xl md:text-6xl font-bold mt-4 md:mt-16">Shaka Pratama.</h1>
 
                 <!-- Country, Region, Island -->
                 <div class="flex mt-8 md:mt-16 font-light text-gray-500 space-x-4 justify-center">
                     <div class="pr-4">
                         <span class="uppercase">Country</span>
-                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">
-                            Indonesia
-                        </p>
+                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Indonesia</p>
                     </div>
                     <div class="pr-4">
                         <span class="uppercase">Island</span>
-                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">
-                            Bali
-                        </p>
+                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Bali</p>
                     </div>
                     <div class="pr-4">
                         <span class="uppercase">Regency</span>
-                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">
-                            Badung
-                        </p>
+                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Badung</p>
                     </div>
                 </div>
 
                 <!-- Description -->
                 <div class="description w-full mt-8 md:mt-16 text-gray-500 text-sm">
-                    Saya adalah seorang web developer yang berdedikasi untuk menciptakan
-                    website modern, responsif, dan fungsional. Dengan keahlian dalam
-                    pengembangan front-end dan back-end, saya fokus pada pengalaman
-                    pengguna yang optimal serta desain yang bersih dan efisien.
+                    Saya adalah seorang web developer yang berdedikasi untuk menciptakan website modern, responsif, dan fungsional. Dengan keahlian dalam pengembangan front-end dan back-end, saya fokus pada pengalaman pengguna yang optimal serta desain yang bersih dan efisien.
                 </div>
 
-                <button class="uppercase mt-5 text-sm font-semibold hover:underline">
-                    Read more
-                </button>
+                <button class="uppercase mt-5 text-sm font-semibold hover:underline">Read more</button>
             </div>
         </div>
 
@@ -123,7 +108,99 @@
         </div>
     </div>
 
-    <script src="javascript/navbar.js"></script>
+    <!-- Showcase Project Section -->
+    <section class="py-20 bg-gray-100" id="project">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Showcase Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <a href="https://jukutpremium.github.io/CoffeeZone/">
+                    <div class="relative group">
+                        <img src="assets/image1.png" alt="Project 1" class="w-full h-60 object-cover transition-transform duration-300 transform">
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">COFFEE ZONE</h3>
+                                <p class="mt-2 text-sm">Project mata Pelajaran Produktif PPLG, membuat suatu project dengan bootstrap 5</p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs">CSS</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs">JavaScript</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs">Bootstrap 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://jukutpremium.github.io/Ezzy-Hotel/">
+                    <div class="relative group">
+                        <img src="assets/image2.png" alt="Project 2" class="w-full h-60 object-cover transition-transform duration-300 transform">
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">Ezzy Hotel</h3>
+                                <p class="mt-2 text-sm">Project lomba dari Ezzy Hotel, membuat website untuk ezzy hotel</p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">CSS</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">JavaScript</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Bootstrap 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://jukutpremium.github.io/Nyarik-Kopi/">
+                    <div class="relative group">
+                        <img src="assets/image3.png" alt="Project 3" class="w-full h-60 object-cover transition-transform duration-300 transform">
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">NYARIK KOPI</h3>
+                                <p class="mt-2 text-sm">Project hasil kolaborasi dengan Jaya Andika, membuat website yang mendukung UMKM contohnya website Nyarik Kopi ini.</p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">CSS</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">JavaScript</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Bootstrap 5</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">AOS</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Anime.js</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">GSAP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://jukutpremium.github.io/Penglipuran/">
+                    <div class="relative group">
+                        <img src="assets/image4.png" alt="Project 4" class="w-full h-60 object-cover transition-transform duration-300 transform">
+                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">PENGLIPURAN</h3>
+                                <p class="mt-2 text-sm">Project membuat online shop untuk cupcakes</p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">CSS</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">JavaScript</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Bootstrap 5</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">AOS</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Anime.js</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">GSAP</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">typed.js</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">jQuery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+<script src="javascript/navbar.js"></script>
 </body>
 
 </html>
