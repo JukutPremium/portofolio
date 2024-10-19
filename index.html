@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaka Pratama | Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+
+    
+   <!-- Navbar -->
+<nav class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-6 py-4 z-50">
+  
+    <!-- Logo -->
+    <h1 class="text-xl md:text-2xl font-bold">ThePixelWebsmith.</h1>
+  
+    <!-- Mobile menu button (hamburger) -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:block nav font-semibold text-lg">
+      <ul class="flex items-center space-x-10">
+        <li>
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">Project</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <!-- Desktop contact button -->
+    <div class="hidden md:block">
+      <button class="bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300">Contact</button>
+    </div>
+  </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white z-40">
+        <ul class="flex flex-col items-center space-y-4 py-8 mt-16">
+            <li class="w-full text-center">
+              <a href="#home" class="mobile-link block w-full py-4 hover:bg-gray-100">Home</a>
+            </li>
+            <li class="w-full text-center">
+              <a href="#" class="mobile-link block w-full py-4 hover:bg-gray-100">About</a>
+            </li>
+            <li class="w-full text-center">
+              <a href="#" class="mobile-link block w-full py-4 hover:bg-gray-100">Project</a>
+            </li>
+            <li class="w-full text-center px-4 mt-4">
+              <button class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300 w-full">Contact</button>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Hero Content -->
+
+
+<div class="flex flex-wrap md:flex-nowrap items-center h-screen w-screen">
+  <!-- Text Content -->
+  <div class="bg-white w-full md:w-1/2 h-full flex items-center justify-center">
+    <div class="mx-8 md:mx-16 text-center">
+      <!-- Profile Image for Mobile/Tablets -->
+      <img src="assets/photohero.png" class="md:hidden h-32 w-32 rounded-full mx-auto" alt="Profile Image" />
+
+      <h1 class="text-4xl md:text-6xl font-bold mt-4 md:mt-16">Shaka Pratama.</h1>
+
+      <!-- Country, Region, Island -->
+      <div class="flex mt-8 md:mt-16 font-light text-gray-500 space-x-4 justify-center">
+        <div class="pr-4">
+          <span class="uppercase">Country</span>
+          <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Indonesia</p>
+        </div>
+        <div class="pr-4">
+          <span class="uppercase">Island</span>
+          <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Bali</p>
+        </div>
+        <div class="pr-4">
+          <span class="uppercase">Regency</span>
+          <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Badung</p>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="description w-full mt-8 md:mt-16 text-gray-500 text-sm">
+        Saya adalah seorang web developer yang berdedikasi untuk menciptakan website modern, responsif, dan fungsional. Dengan keahlian dalam pengembangan front-end dan back-end, saya fokus pada pengalaman pengguna yang optimal serta desain yang bersih dan efisien.
+      </div>
+
+      <button class="uppercase mt-5 text-sm font-semibold hover:underline">
+        Read more
+      </button>
+    </div>
+  </div>
+
+  <!-- Image (hidden on mobile) -->
+  <div class="hidden md:block w-full md:w-1/2 h-full">
+    <img src="assets/photohero.png" class="h-full w-full object-cover" alt="Hero Image" />
+  </div>
+</div>
+
+    <script src="javascript/navbar.js"></script>
+  </body>
+</html>

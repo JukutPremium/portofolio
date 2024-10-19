@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes underline-grow {
+    from { width: 0; }
+    to { width: 100%; }
+}
+.nav-link {
+    position: relative;
+    padding-bottom: 2px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+#mobile-menu {
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+#mobile-menu.open {
+    max-height: 100vh;
+    opacity: 1;
+}
