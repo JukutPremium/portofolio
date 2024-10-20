@@ -7,12 +7,18 @@
     <title>Shaka Pratama | Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
 </head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-6 py-4 z-50">
+<body class=" ">
+
+
+    <nav id="navbar"
+        class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-6 py-4 z-50 transform -translate-y-full">
         <h1 class="text-xl md:text-2xl font-bold">ThePixelWebsmith.</h1>
 
         <!-- Mobile menu button -->
@@ -49,7 +55,7 @@
     </nav>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white z-40">
+    <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white z-40 hidden">
         <ul class="flex flex-col items-center space-y-4 py-8 mt-16">
             <li class="w-full text-center">
                 <a href="#home" class="mobile-link block w-full py-4 hover:bg-gray-100">Home</a>
@@ -68,7 +74,7 @@
             </li>
         </ul>
     </div>
-        <!-- Navbar End -->
+    <!-- Navbar End -->
 
     <!-- Hero Content -->
     <div class="flex flex-wrap md:flex-nowrap items-center h-screen w-screen" id="hero">
@@ -101,7 +107,9 @@
                     fungsional. Dengan keahlian dalam pengembangan front-end dan back-end, saya fokus pada pengalaman
                     pengguna yang optimal serta desain yang bersih dan efisien. -->
 
-                    I am a web developer dedicated to creating modern, responsive, and functional websites. With expertise in both front-end and back-end development, I focus on optimal user experience and clean, efficient design.
+                    I am a web developer dedicated to creating modern, responsive, and functional websites. With
+                    expertise in both front-end and back-end development, I focus on optimal user experience and clean,
+                    efficient design.
                     <div class="flex flex-wrap justify-center mt-4">
                         <span
                             class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">HTML</span>
@@ -151,12 +159,15 @@
         <div class="container mx-auto px-4">
             <!-- <h2 class="text-3xl font-bold text-center mb-12">Latest Projects</h2> -->
             <div class="flex w-full mb-20 flex-wrap">
-                <h1 class="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">Our Latest Project ──────────</h1>
-                <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700 tracking-wide mb-4 text-center">
-                    Check out our projects created with amazing ideas that provide a memorable experience. Each project reflects the essence of beauty and creativity.
+                <h1 class="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">Our Latest Project ──────────
+                </h1>
+                <p
+                    class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700 tracking-wide mb-4 text-center">
+                    Check out our projects created with amazing ideas that provide a memorable experience. Each project
+                    reflects the essence of beauty and creativity.
                 </p>
-              </div>
-              
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <a href="https://jukutpremium.github.io/CoffeeZone/">
@@ -168,7 +179,8 @@
                             <div class="text-white text-center p-4">
                                 <h3 class="text-2xl font-semibold">COFFEE ZONE</h3>
                                 <!-- <p class="mt-2 text-sm">Project mata Pelajaran Produktif PPLG, membuat suatu project dengan bootstrap 5</p> -->
-                                <p class="mt-2 text-sm">Productive Subject Project PPLG, creating a project with bootstrap 5.</p>
+                                <p class="mt-2 text-sm">Productive Subject Project PPLG, creating a project with
+                                    bootstrap 5.</p>
                                 <div class="flex flex-wrap justify-center mt-4">
                                     <span class="border border-white text-white px-2 py-1 mx-1 text-xs">HTML</span>
                                     <span class="border border-white text-white px-2 py-1 mx-1 text-xs">CSS</span>
@@ -192,7 +204,8 @@
                                 <h3 class="text-2xl font-semibold">EZZY HOTEL</h3>
                                 <!-- <p class="mt-2 text-sm">Project lomba dari Ezzy Hotel, membuat website untuk Ezzy Hotel.
                                 </p> -->
-                                <p class="mt-2 text-sm">Competition project from Ezzy Hotel, creating a website for Ezzy Hotel.
+                                <p class="mt-2 text-sm">Competition project from Ezzy Hotel, creating a website for Ezzy
+                                    Hotel.
                                 </p>
                                 <div class="flex flex-wrap justify-center mt-4">
                                     <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
@@ -217,7 +230,8 @@
                                 <h3 class="text-2xl font-semibold">NYARIK KOPI</h3>
                                 <!-- <p class="mt-2 text-sm">Project hasil kolaborasi dengan Jaya Andika, membuat website
                                     yang mendukung UMKM contohnya website Nyarik Kopi ini.</p> -->
-                                <p class="mt-2 text-sm">A collaborative project with Jaya Andika, creating a website that supports UMKM, for example the Nyarik Kopi website.</p>
+                                <p class="mt-2 text-sm">A collaborative project with Jaya Andika, creating a website
+                                    that supports UMKM, for example the Nyarik Kopi website.</p>
                                 <div class="flex flex-wrap justify-center mt-4">
                                     <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
                                     <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">CSS</span>
@@ -244,7 +258,8 @@
                             <div class="text-white text-center p-4">
                                 <h3 class="text-2xl font-semibold">PENGLIPURAN</h3>
                                 <!-- <p class="mt-2 text-sm">Website ini memperkenalkan Budaya, Daya Tarik, dan Objek Wisata Lokal yang ada di  Desa Penglipuran.</p> -->
-                                <p class="mt-2 text-sm">Website ini memperkenalkan Budaya, Daya Tarik, dan Objek Wisata Lokal yang ada di  Desa Penglipuran.</p>
+                                <p class="mt-2 text-sm">Website ini memperkenalkan Budaya, Daya Tarik, dan Objek Wisata
+                                    Lokal yang ada di Desa Penglipuran.</p>
 
                                 <div class="flex flex-wrap justify-center mt-4">
                                     <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
@@ -272,48 +287,62 @@
     </section>
     <!-- Showcase Project -->
 
-    
+
     <!-- Gallery -->
     <section class="text-gray-600 body-font" id="gallery">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
             <div class="container mx-auto px-4">
-                <!-- <h2 class="text-3xl font-bold text-center mb-12">Latest Projects</h2> -->
-                <div class="flex w-full mb-20 flex-wrap justify-end">
-                    <h1 class="text-4xl lg:text-5xl font-bold text-right text-gray-800 mb-12 w-full">────────── Our Stunning Gallery</h1>
-                    <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700 tracking-wide mb-4 text-center">
-                        Take a look at our carefully curated gallery showcasing moments that tell a story. Each image reflects the essence of beauty and creativity. Dive in and experience the world through our lens.
-                    </p>
-                  </div>
-          
-      
-          <div class="flex flex-wrap md:-m-2 -m-1">
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block hover:scale-[1.025] ease-in-out duration-300" src="assets/image6.png">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block hover:scale-[1.025] ease-in-out duration-300" src="assets/image5.png">
-              </div>
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block hover:scale-[1.025] ease-in-out duration-300" src="assets/image4.png">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block hover:scale-[1.025] ease-in-out duration-300" src="assets/image2.png">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block hover:scale-[1.025] ease-in-out duration-300" src="assets/image7.png">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block hover:scale-[1.025] ease-in-out duration-300" src="assets/image8.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
 
+                <div class="flex w-full mb-20 flex-wrap">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">Our Stunning Gallery
+                        ──────────</h1>
+                    <p
+                        class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700 tracking-wide mb-4 text-center">
+                        Take a look at our carefully curated gallery showcasing moments that tell a story. Each image
+                        reflects the essence of beauty and creativity. Dive in and experience the world through our
+                        lens.
+                    </p>
+                </div>
+
+
+                <div class="flex flex-wrap md:-m-2 -m-1">
+                    <div class="flex flex-wrap w-1/2">
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img alt="gallery"
+                                class="w-full object-cover h-full object-center block hover:scale-[1.025] ease-in-out duration-300"
+                                src="assets/image6.png">
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img alt="gallery"
+                                class="w-full object-cover h-full object-center block hover:scale-[1.025] ease-in-out duration-300"
+                                src="assets/image5.png">
+                        </div>
+                        <div class="md:p-2 p-1 w-full">
+                            <img alt="gallery"
+                                class="w-full h-full object-cover object-center block hover:scale-[1.025] ease-in-out duration-300"
+                                src="assets/image4.png">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/2">
+                        <div class="md:p-2 p-1 w-full">
+                            <img alt="gallery"
+                                class="w-full h-full object-cover object-center block hover:scale-[1.025] ease-in-out duration-300"
+                                src="assets/image2.png">
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img alt="gallery"
+                                class="w-full object-cover h-full object-center block hover:scale-[1.025] ease-in-out duration-300"
+                                src="assets/image7.png">
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img alt="gallery"
+                                class="w-full object-cover h-full object-center block hover:scale-[1.025] ease-in-out duration-300"
+                                src="assets/image8.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     <!-- Gallery End -->
 
     <!-- Back To Start -->
@@ -324,7 +353,16 @@
     </a>
     <!-- Back To Start End -->
 
-
+    <!-- Footer -->
+    <footer class="pb-20 bg-[#fbfdff]">
+        <div class="container mx-auto text-center">
+            <a href="#home" class="text-decoration-none">
+                <p class="text-4xl md:text-5xl lg:text-6xl mb-5 text-gray-900">Thank You</p>
+            </a>
+            <small class="text-gray-900">&copy; Copyright by Shaka Pratama. all rights reserved.</small>
+        </div>
+    </footer>
+    <!-- Footer End -->
     <script src="javascript/script.js"></script>
 </body>
 

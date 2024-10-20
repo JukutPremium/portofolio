@@ -23,3 +23,24 @@
         }
     });
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbar = document.getElementById('navbar');
+        
+        // Animation
+        anime({
+            targets: navbar,
+            translateY: ['-100%', '0%'],
+            duration: 2500,
+            easing: 'easeOutExpo'
+        });
+
+        // Mobile Menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+
+
