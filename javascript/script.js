@@ -42,11 +42,3 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu.classList.toggle('hidden');
     });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("animate-pulse");
-});
-
-window.addEventListener("load", function () {
-    document.body.classList.remove("animate-pulse");
-});
