@@ -1,44 +1,28 @@
-// Navbar (Mobile)
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
-const mobileLinks = document.querySelectorAll('.mobile-link');
+const dropdownBtn = document.getElementById('dropdown-btn');
+const dropdownMenu = document.getElementById('dropdown-menu');
 
+// Toggle mobile menu visibility
 menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
+    mobileMenu.classList.toggle('hidden');
 });
 
-mobileLinks.forEach(link => {
+// Toggle dropdown menu visibility
+dropdownBtn.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+});
+
+// Hide dropdown menu when a link is clicked
+dropdownMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
+        dropdownMenu.classList.add('hidden');
     });
 });
 
-// to-top button
-const toTopButton = document.getElementById("to-top");
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        toTopButton.classList.remove("hidden");
-    } else {
-        toTopButton.classList.add("hidden");
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.getElementById('navbar');
-
-    // Animation
-    anime({
-        targets: navbar,
-        translateY: ['-100%', '0%'],
-        duration: 2500,
-        easing: 'easeOutExpo'
-    });
-
-    // Mobile Menu
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', function () {
-        mobileMenu.classList.toggle('hidden');
+// Hide mobile menu when a link is clicked
+document.querySelectorAll('#menu-items a, #mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
     });
 });
