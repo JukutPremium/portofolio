@@ -1,28 +1,33 @@
-const menuBtn = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const dropdownBtn = document.getElementById('dropdown-btn');
-const dropdownMenu = document.getElementById('dropdown-menu');
+    // Navbar (Mobile)
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
 
-// Toggle mobile menu visibility
-menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
-
-// Toggle dropdown menu visibility
-dropdownBtn.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('hidden');
-});
-
-// Hide dropdown menu when a link is clicked
-dropdownMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        dropdownMenu.classList.add('hidden');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
     });
-});
 
-// Hide mobile menu when a link is clicked
-document.querySelectorAll('#menu-items a, #mobile-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
     });
+
+    // to-top button
+    const toTopButton = document.getElementById("to-top");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            toTopButton.classList.remove("hidden");  
+        } else {
+            toTopButton.classList.add("hidden"); 
+        }
+    });
+
+// Typed.js
+new Typed('#nama-saya', {
+    strings: ['Shaka Pratama.'],
+    typeSpeed: 75,
+    showCursor: false,
+    loop: false,
+    startDelay: 0, 
 });

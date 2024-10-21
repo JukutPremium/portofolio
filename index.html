@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,8 @@
         <!-- Mobile menu button -->
         <div class="md:hidden">
             <button id="menu-btn" class="text-gray-700 focus:outline-none">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
@@ -60,7 +62,8 @@
                 <a href="#skills" class="mobile-link block w-full py-4 hover:bg-gray-100">Skills</a>
             </li>
             <li class="w-full text-center px-4 mt-4">
-                <button class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300 w-full">
+                <button
+                    class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300 w-full">
                     Contact
                 </button>
             </li>
@@ -68,37 +71,77 @@
     </div>
 
     <!-- Hero Content -->
-    <div class="flex flex-wrap md:flex-nowrap items-center h-screen w-screen">
+    <div class="flex flex-wrap md:flex-nowrap items-center h-screen w-screen" id="hero">
         <!-- Text Content -->
         <div class="bg-white w-full md:w-1/2 h-full flex items-center justify-center">
             <div class="mx-8 md:mx-16 text-center">
                 <!-- Profile Image for Mobile/Tablets -->
-                <img src="assets/photomobile.png" class="md:hidden h-32 w-32 rounded-full mx-auto" alt="Profile Image" />
+                <img src="assets/photomobile.png" class="md:hidden h-32 w-32 rounded-full mx-auto"
+                    alt="Profile Image" />
 
-                <h1 class="text-4xl md:text-6xl font-bold mt-4 md:mt-16">Shaka Pratama.</h1>
+                <h1 class="text-4xl md:text-6xl font-bold mt-4 md:mt-16" id="nama-saya">
+                    
+                </h1>
 
                 <!-- Country, Region, Island -->
-                <div class="flex mt-8 md:mt-16 font-light text-gray-500 space-x-4 justify-center">
+                <div class="flex mt-5 md:mt-16 font-light text-gray-500 space-x-4 justify-center">
                     <div class="pr-4">
                         <span class="uppercase">Country</span>
-                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Indonesia</p>
+                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">
+                            Indonesia
+                        </p>
                     </div>
                     <div class="pr-4">
                         <span class="uppercase">Island</span>
-                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Bali</p>
+                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2" >
+                           Bali
+                        </p>
                     </div>
                     <div class="pr-4">
                         <span class="uppercase">Regency</span>
-                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">Badung</p>
+                        <p class="text-xl md:text-2xl text-gray-900 font-semibold pt-2">
+                            Badung
+                        </p>
                     </div>
                 </div>
 
                 <!-- Description -->
-                <div class="description w-full mt-8 md:mt-16 text-gray-500 text-sm">
-                    Saya adalah seorang web developer yang berdedikasi untuk menciptakan website modern, responsif, dan fungsional. Dengan keahlian dalam pengembangan front-end dan back-end, saya fokus pada pengalaman pengguna yang optimal serta desain yang bersih dan efisien.
-                </div>
+                <div class="description w-full mt-8 md:mt-16 text-gray-500 text-xl">
+                    Saya adalah seorang web developer yang berdedikasi untuk menciptakan
+                    website modern, responsif, dan fungsional. Dengan keahlian dalam
+                    pengembangan front-end dan back-end, saya fokus pada pengalaman
+                    pengguna yang optimal serta desain yang bersih dan efisien.
+                    <div class="flex flex-wrap justify-center mt-4 ">
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">HTML</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">CSS</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">JavaScript</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">PHP</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">Java</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">Taildwind</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">Bootstrap
+                            5</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">Anime.js</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">GSAP</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">typed.js</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">JQuery</span>
+                        <span
+                            class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs">AOS</span>
+                    </div>
+                </div> <br>
 
-                <button class="uppercase mt-5 text-sm font-semibold hover:underline">Read more</button>
+                <a href="#project" class="nav-link uppercase mt-5 text-sm font-semibold">
+                    See My Project</a>
             </div>
         </div>
 
@@ -107,142 +150,198 @@
             <img src="assets/photohero.png" class="h-full w-full object-cover" alt="Hero Image" />
         </div>
     </div>
-    
 
     <!-- Showcase Project Section -->
-    <section class="py-20 bg-gray-100" id="project">
-    <section class="py-20 bg-gray-200" id="project">
+    <section class="py-20 bg-white" id="project">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Showcase Projects</h2>
+            <!-- <h2 class="text-3xl font-bold text-center mb-12">Latest Projects</h2> -->
+            <div class="flex flex-col items-center mb-20">
+                <!-- Menggunakan flex dan items-center -->
+                <h1 class="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
+                    Latest Projects.
+                </h1>
+                <p
+                    class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700 tracking-wide mb-4 text-center">
+                    Check out our projects created with amazing ideas that provide a
+                    memorable experience. Each project reflects the essence of beauty
+                    and creativity.
+                </p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <a href="https://jukutpremium.github.io/CoffeeZone/">
-                    <div class="relative group">
-                        <img src="assets/image1.png" alt="Project 1" class="w-full h-60 object-cover transition-transform duration-300 transform">
-                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <div class="text-white text-center p-4">
-                                <h3 class="text-2xl font-semibold">COFFEE ZONE</h3>
-                                <p class="mt-2 text-sm">Project mata Pelajaran Produktif PPLG, membuat suatu project dengan bootstrap 5</p>
-                                <div class="flex flex-wrap justify-center mt-4">
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs">HTML</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs">CSS</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs">JavaScript</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs">Bootstrap 5</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://jukutpremium.github.io/Ezzy-Hotel/">
-                    <div class="relative group">
-                        <img src="assets/image2.png" alt="Project 2" class="w-full h-60 object-cover transition-transform duration-300 transform">
-                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <div class="text-white text-center p-4">
-                                <h3 class="text-2xl font-semibold">Ezzy Hotel</h3>
-                                <p class="mt-2 text-sm">Project lomba dari Ezzy Hotel, membuat website untuk ezzy hotel</p>
-                                <div class="flex flex-wrap justify-center mt-4">
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">CSS</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">JavaScript</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Bootstrap 5</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://jukutpremium.github.io/Nyarik-Kopi/">
-                    <div class="relative group">
-                        <img src="assets/image3.png" alt="Project 3" class="w-full h-60 object-cover transition-transform duration-300 transform">
-                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <div class="text-white text-center p-4">
-                                <h3 class="text-2xl font-semibold">NYARIK KOPI</h3>
-                                <p class="mt-2 text-sm">Project hasil kolaborasi dengan Jaya Andika, membuat website yang mendukung UMKM contohnya website Nyarik Kopi ini.</p>
-                                <div class="flex flex-wrap justify-center mt-4">
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">CSS</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">JavaScript</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Bootstrap 5</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">AOS</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Anime.js</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">GSAP</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://jukutpremium.github.io/Penglipuran/">
-                    <div class="relative group">
-                        <img src="assets/image4.png" alt="Project 4" class="w-full h-60 object-cover transition-transform duration-300 transform">
-                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="absolute inset-0   bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <a href="https://jukutpremium.github.io/Penglipuran/" class="hover:scale-[1.025] ease-in-out duration-300">                    <div class="relative group">
+                        <img src="assets/image4.png" alt="Project 4"
+                            class="w-full  object-cover transition-transform duration-300 transform" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="text-white text-center p-4">
                                 <h3 class="text-2xl font-semibold">PENGLIPURAN</h3>
-                                <p class="mt-2 text-sm">Project membuat online shop untuk cupcakes</p>
+                                <!-- <p class="mt-2 text-sm">Website ini memperkenalkan Budaya, Daya Tarik, dan Objek Wisata Lokal yang ada di  Desa Penglipuran.</p> -->
+                                <p class="mt-2 text-sm">
+                                    This website introduces the Culture, Attractions, and Local Tourist Objects in Penglipuran Village.
+                                </p>
+
                                 <div class="flex flex-wrap justify-center mt-4">
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">HTML</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">CSS</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">JavaScript</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Bootstrap 5</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">AOS</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">Anime.js</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">GSAP</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">typed.js</span>
-                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3">jQuery</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">CSS</span>
+                                    <span
+                                        class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">JavaScript</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">Bootstrap
+                                        5</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">AOS</span>
+                                    <span
+                                        class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">Anime.js</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">GSAP</span>
+                                    <span
+                                        class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">typed.js</span>
+                                    <span
+                                        class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">jQuery</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </a>
 
+                <!-- <a href="https://jukutpremium.github.io/CoffeeZone/" class="hover:scale-[1.025] ease-in-out duration-300">
+                    <div class="relative group">
+                        <img src="assets/image1.png" alt="Project 1"
+                            class="w-full h- object-cover transition-transform duration-300 transform" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">COFFEE ZONE</h3>
+                                
+                                <p class="mt-2 text-sm">
+                                    Productive Subject Project PPLG, creating a project with
+                                    bootstrap 5.
+                                </p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">CSS</span>
+                                    <span
+                                        class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">JavaScript</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">Bootstrap
+                                        5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+
+                <a href="https://jukutpremium.github.io/Ezzy-Hotel/" class="hover:scale-[1.025] ease-in-out duration-300">
+                    <div class="relative group">
+                        <img src="assets/image2.png" alt="Project 2"
+                            class="w-full  object-cover transition-transform duration-300 transform" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">EZZY HOTEL</h3>
+                                <!-- <p class="mt-2 text-sm">Project lomba dari Ezzy Hotel, membuat website untuk Ezzy Hotel.
+                                </p> -->
+                                <p class="mt-2 text-sm">
+                                    Competition project from Ezzy Hotel, creating a website for
+                                    Ezzy Hotel.
+                                </p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">CSS</span>
+                                    <span
+                                        class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">JavaScript</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">Bootstrap
+                                        5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://jukutpremium.github.io/Nyarik-Kopi/" class="hover:scale-[1.025] ease-in-out duration-300">
+                    <div class="relative group">
+                        <img src="assets/image3.png" alt="Project 3"
+                            class="w-full  object-cover transition-transform duration-300 transform" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">NYARIK KOPI</h3>
+                                <!-- <p class="mt-2 text-sm">Project hasil kolaborasi dengan Jaya Andika, membuat website
+                                    yang mendukung UMKM contohnya website Nyarik Kopi ini.</p> -->
+                                <p class="mt-2 text-sm">
+                                    A collaborative project with Jaya Andika, creating a website
+                                    that supports UMKM, for example the Nyarik Kopi website.
+                                </p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">CSS</span>
+                                    <span
+                                        class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">JavaScript</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">Bootstrap
+                                        5</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">AOS</span>
+                                    <span
+                                        class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">Anime.js</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">GSAP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- <a href="https://www.kumanime.xyz" class="hover:scale-[1.025] ease-in-out duration-300">
+                    <div class="relative group">
+                        <img src="assets/image9.png" alt="Project 3"
+                            class="w-full h- object-cover transition-transform duration-300 transform" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">KUMANIME</h3>
+                                
+                                <p class="mt-2 text-sm">
+                                    Kumanime is an anime streaming website, here users don't need to worry about annoying ads.
+                                </p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">HTML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">XML</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">CSS</span>
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+
+                <!-- <a href="#" class="hover:scale-[1.025] ease-in-out duration-300">
+                    <div class="relative group">
+                        <img src="https://placehold.co/600x379" alt="Project 3"
+                            class="w-full h- object-cover transition-transform duration-300 transform" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-2xl font-semibold">Comming Soon</h3>
+                                
+                                <p class="mt-2 text-sm">
+                                    Comming Soon
+                                </p>
+                                <div class="flex flex-wrap justify-center mt-4">
+                                    <span class="border border-white text-white px-2 py-1 mx-1 text-xs mt-3 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300">Comming Soon</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+
             </div>
         </div>
     </section>
-        </section>
+    <!-- Showcase Project End -->
 
-    
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white shadow-md rounded-lg p-6 transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-semibold mb-2">HTML</h3>
-                    <div style="width: 100%;" class="bg-gray-200"><div class="h-2 bg-blue-500 rounded-full" style="width: 85%;"></div></div>
-                    <p class="mt-2 text-gray-500">Level: 85%</p>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6 transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-semibold mb-2">CSS</h3>
-                    <div style="width: 100%;" class="bg-gray-200"><div class="h-2 bg-blue-500 rounded-full" style="width: 80%;"></div></div>
-                    <p class="mt-2 text-gray-500">Level: 80%</p>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6 transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
-                    <div style="width: 100%;" class="bg-gray-200"><div class="h-2 bg-blue-500 rounded-full" style="width: 55%;"></div></div>
-                    <p class="mt-2 text-gray-500">Level: 55%</p>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6 transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-semibold mb-2">Bootstrap</h3>
-                    <div style="width: 100%;" class="bg-gray-200"><div class="h-2 bg-blue-500 rounded-full" style="width: 77%;"></div></div>
-                    <p class="mt-2 text-gray-500">Level: 77%</p>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6 transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-semibold mb-2">Tailwind CSS</h3>
-                    <div style="width: 100%;" class="bg-gray-200"><div class="h-2 bg-blue-500 rounded-full" style="width: 60%;"></div></div>
-                    <p class="mt-2 text-gray-500">Level: 60%</p>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6 transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-semibold mb-2">Java</h3>
-                    <div style="width: 100%;" class="bg-gray-200"><div class="h-2 bg-blue-500 rounded-full" style="width: 25%;"></div></div>
-                    <p class="mt-2 text-gray-500">Level: 25%</p>
-                </div>
-            </div>
-        </div>
-    </section>
-=
-
-<script src="javascript/navbar.js"></script>
+    <!-- Back To Start -->
+    <a href="#hero"
+        class="bg-[#010203] flex flexed justify-center items-center h-14 w-14 rounded-full fixed z-[9999] right-4 bottom-4 p-4 hover:animate-pulse hover:scale-[1.1] ease-in-out duration-300 hidden"
+        id="to-top">
+        <span class="mt-2 block w-5 h-5 border-white border-t-2 border-l-2 rotate-45"></span>
+    </a>
+    <!-- Back To Start End -->
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>
