@@ -31,3 +31,4 @@ new Typed('#nama-saya', {
     loop: false,
     startDelay: 0, 
 });
+
