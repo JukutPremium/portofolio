@@ -6,15 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shaka Pratama | Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
 </head>
 
-<body>
-    <a href="index.html"
-        class="bg-[#010203] flex flexed justify-center items-center h-14 w-14 rounded-full fixed z-[9999] left-4 top-4 p-4 hover:animate-pulse hover:scale-[1.1] ease-in-out duration-300">
-        <span class="ml-1 block w-5 h-5 border-white border-b-2 border-l-2 rotate-45"></span>
-    </a>
+<body class="preloader-active">
+    <div class="preloader">
+        <div class="logo-container">
+          <div class="loading-text text-center font-bold uppercase " id="welcome"></div>
+        </div>
+      </div>
+
+      <a href="index.html"
+      class="bg-[#010203] flex flexed justify-center items-center h-14 w-14 rounded-full fixed z-[9999] left-4 top-4 p-4 hover:animate-pulse hover:scale-[1.1] ease-in-out duration-300">
+      <span class="ml-1 block w-5 h-5 border-white border-b-2 border-l-2 rotate-45"></span>
+  </a>
 
     <div class="flex flex-wrap md:flex-nowrap items-center h-screen w-screen" id="hero">
         <!-- Text Content -->
@@ -24,7 +33,7 @@
                 <img src="assets/photomobile.png" class="md:hidden h-32 w-32 rounded-full mx-auto"
                     alt="Profile Image" />
 
-                <h1 class="text-4xl md:text-6xl font-bold mt-8 md:mt-16" id="contact-nama-saya">
+                <h1 class="text-4xl md:text-6xl font-bold mt-8 md:mt-16" id="nama-saya">
                     
                 </h1>
 
@@ -75,15 +84,9 @@
         </div>
     </div>
 
-   <script>
-    new Typed('#contact-nama-saya', {
-    strings: ['Shaka Pratama.'],
-    typeSpeed: 75,
-    showCursor: false,
-    loop: false,
-    startDelay: 0, 
-});
-   </script>
+<script src="javascript/preloader.js"></script>
+<script src="javascript/script.js"></script>
+<script src="javascript/typed.js"></script>
 </body>
 
 </html>

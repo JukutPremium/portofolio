@@ -31,3 +31,50 @@
     max-height: 100vh;
     opacity: 1;
 }
+
+
+body.preloader-active {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  .preloader .loading-text {
+    width: 100%;
+    opacity: 0;
+    padding: 0px 50px;
+
+    font-size: 3rem;
+    color: #010203;
+    margin-top: 20px;
+    opacity: 0;
+  }
+  
+  /* .preloader .loading-text {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+    opacity: 0;
+  } */
+  
+  .content {
+    display: none;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
