@@ -13,3 +13,5 @@ new Typed('#nama-eug', {
     showCursor: false,
     loop: false,
 });
+
+
