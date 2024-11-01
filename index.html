@@ -12,12 +12,13 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="preloader-active">
     <div class="preloader">
         <div class="logo-container">
-          <div class="loading-text text-center font-bold uppercase " id="welcome" style="user-select: none;"></div>
+          <div class="loading-text text-center font-bold uppercase" id="welcome" style="user-select: none;"></div>
         </div>
       </div>
 
@@ -30,7 +31,7 @@
                 <button id="menu-btn" class="text-gray-700 focus:outline-none">
                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        <path  stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
@@ -40,7 +41,7 @@
             <nav class="hidden md:block nav font-semibold text-lg">
                 <ul class="flex items-center space-x-10">
                     <li>
-                        <a href="#hero" class="nav-link" style="user-select: none;">About</a>
+                        <a href="#about" class="nav-link" style="user-select: none;">About</a>
                     </li>
                     <li>
                         <a href="#project" class="nav-link" style="user-select: none;">Project</a>
@@ -66,7 +67,7 @@
         <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white z-40">
             <ul class="flex flex-col items-center space-y-4 py-8 mt-16">
                 <li class="w-full text-center">
-                    <a href="#hero" class="mobile-link block w-full py-4 hover:bg-gray-100" style="user-select: none;">About</a>
+                    <a href="#about" class="mobile-link block w-full py-4 hover:bg-gray-100" style="user-select: none;">About</a>
                 </li>
                 <li class="w-full text-center">
                     <a href="#project" class="mobile-link block w-full py-4 hover:bg-gray-100" style="user-select: none;">Project</a>
@@ -86,17 +87,40 @@
             </ul>
         </div>
 
+        <div id="back"></div>
+
+        <section class="lg:block hidden w-screen pt-10 bg-white h-screen"  id="hero">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="py-96 text-center">
+                    <h3 class="text-4xl md:text-5xl lg:text-[5rem] font-bold mx-4 md:mx-20 lg:mx-64 text-[#010203]" id="nama-saya" ></h3>
+                    <p class="text-lg md:text-xl mt-4 mx-4 md:mx-20 lg:mx-64 text-[#010203] py-2">
+                        — Web Developer | Designer —
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-5 pt-5">
+                        <a href="#"
+                            class="flex items-center px-6 py-3 bg-white hover:scale-[1.08] hover:bg-[#010203] border border-black hover:text-white duration-300 ">
+                            Download Resume
+                        </a>
+                        <a href="#about"
+                            class="flex items-center px-6 py-3 bg-white hover:scale-[1.08] hover:bg-[#010203] border border-black hover:text-white duration-300 ">
+                            Start Explore
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Hero Content -->
-        <div class="flex flex-wrap md:flex-nowrap items-center h-screen w-screen" id="hero">
+        <div class="flex flex-wrap md:flex-nowrap items-center h-screen w-screen" id="about">
             <!-- Text Content -->
             <div class="bg-white w-full md:w-1/2 h-full flex items-center py- md:py-0 justify-center">
-                <div class="mx-8 md:mx-16 text-center mt-16 mb-8">
+                <div class="mx-8 md:mx-16 text-center mt-16 mb-8">  
                     <!-- Profile Image for Mobile/Tablets -->
                     <img src="assets/photomobile.png" class="md:hidden h-32 w-32 rounded-full mx-auto"
                         alt="Profile Image" />
-
-                        <h1 class="text-4xl md:text-6xl font-bold mt-8 md:mt-16" id="nama-saya" style="user-select: none;">
-                    
+                    <div class="aos" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="70">
+                        <h1 class="text-4xl md:text-6xl font-bold mt-8 md:mt-16" style="user-select: none;" id="nama-eug">
+                        
                         </h1>
 
                     <!-- Country, Region, Island -->
@@ -159,18 +183,15 @@
                         See My Project</a>
                 </div>
             </div>
+            </div>
 
             <!-- Image (hidden on mobile) -->
             <div class="hidden md:block w-full md:w-1/2 h-full">
-                <img src="assets/photohero.png" class="h-full w-full object-cover" alt="Hero Image" />
+                <img src="assets/photohero.png" data-aos="fade-left" data-aos-duration="700" class="h-full w-full object-cover" alt="Hero Image" />
             </div>
         </div>
 
-        <!-- Showcase Project Section -->
-        <section class="py-20 bg-white" id="project">
-            <div class="container mx-auto px-4">
-
-                <!-- <div class="flex flex-col items-center mb-20">
+        <!-- Showcase Project Section -->     <!-- <div class="flex flex-col items-center mb-20">
                     <h1 class="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
                         Latest Projects.
                     </h1>
@@ -181,6 +202,10 @@
                         and creativity.
                     </p>
                 </div> -->
+        <!-- <section class="py-20 bg-white" id="project">
+            <div class="container mx-auto px-4">
+
+           
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <a href="https://jukutpremium.github.io/Penglipuran/"
@@ -367,23 +392,21 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Showcase Project End -->
 
         <!-- Footer -->
 
-            <footer class="w-full pt-10 bg-[#010203]">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div class="py-96 text-center">
-                        <h3 class="text-5xl text-white font-bold mb-4" style="user-select: none;">Are you having problems or questions?</h3>
-                        <!-- <p class="text-white pt-5">contact me by pressing the button below</p> -->
-                    </div> 
-                    <!-- <div class="flex justify-center items-center gap-3">
-                        <a href="#" class="px-9 py-2 bg-white hover:scale-[1.1] ease-in-out duration-300">Contact</a>
-                    </div> -->
-                   
-                </div> <div class="bg-[#010203] text-gray-200 h-10 mt-5 w-full text-center pt-2"><p style="user-select: none;">&copy; 2024 Shaka Pratama</p></div>
-            </footer>
+        <footer class="w-full h-screen bg-[#010203]">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
+                <div class="text-center">
+                    <h3 class="text-5xl text-white font-bold mb-4" style="user-select: none;">Are you having problems or questions?</h3>
+                </div>
+            </div>
+            <div class="bg-[#010203] text-gray-200 h-10 w-full text-center pt-2">
+                <p style="user-select: none;">&copy; 2024 Shaka Pratama</p>
+            </div>
+        </footer>
 
 
 
@@ -428,7 +451,7 @@
         <!-- Footer End -->
 
         <!-- Back To Start -->
-        <a href="#hero"
+        <a href="#back"
             class="bg-[#010203] flex flexed justify-center items-center h-14 w-14 rounded-full fixed z-[9999] right-4 bottom-4 p-4 hover:animate-pulse hover:scale-[1.1] ease-in-out duration-300 hidden"
             id="to-top">
             <span class="mt-2 block w-5 h-5 border-white border-t-2 border-l-2 rotate-45"></span>
@@ -438,6 +461,10 @@
         <script src="javascript/preloader.js"></script>
         <script src="javascript/script.js"></script>
         <script src="javascript/typed.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 
 </html>
