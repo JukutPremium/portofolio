@@ -24,8 +24,11 @@
 
     <!-- Navbar -->
     <nav class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-6 py-4 z-50">
-        <h1 class="text-xl md:text-2xl font-bold" style="user-select: none;">ThePixelWebsmith.</h1>
-
+        <!-- Logo on the left -->
+        <div class="flex-1">
+            <h1 class="text-xl md:text-2xl font-bold" style="user-select: none;"><a href="index.html">ThePixelWebsmith.</a></h1>
+        </div>
+    
         <!-- Mobile menu button -->
         <div class="md:hidden">
             <button id="menu-btn" class="text-gray-700 focus:outline-none">
@@ -35,13 +38,10 @@
                 </svg>
             </button>
         </div>
-
-        <!-- Desktop Nav -->
-        <nav class="hidden md:block nav font-semibold text-lg">
-            <ul class="flex items-center space-x-10">
-                <li>
-                    <a href="#back" class="nav-link" style="user-select: none;">Home</a>
-                </li>
+    
+        <!-- Desktop Nav - Centered -->
+        <nav class="hidden md:block nav font-semibold text-lg flex-1">
+            <ul class="flex items-center justify-center space-x-10">
                 <li>
                     <a href="#about" class="nav-link" style="user-select: none;">About</a>
                 </li>
@@ -53,45 +53,39 @@
                 </li>
             </ul>
         </nav>
-
+    
         <!-- Desktop contact button -->
-        <div class="hidden md:block">
-            <!-- <button class="bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300">
-                Contact
-            </button> -->
-            <button
-                class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300 w-full"><a
-                    href="contact.html" style="user-select: none;">Contact</a></button>
+        <div class="hidden md:block flex-1 text-right">
+            <button class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300">
+                <a href="contact.html" style="user-select: none;">Contact</a>
+            </button>
         </div>
     </nav>
-
+    
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white z-40">
         <ul class="flex flex-col items-center space-y-4 py-8 mt-16">
             <li class="w-full text-center">
-                <a href="#back" class="mobile-link block w-full py-4 hover:bg-gray-100"
-                    style="user-select: none;">Home</a>
+                <a href="#about" class="mobile-link block w-full py-4 hover:bg-gray-100" style="user-select: none;">About</a>
             </li>
             <li class="w-full text-center">
-                <a href="#about" class="mobile-link block w-full py-4 hover:bg-gray-100"
-                    style="user-select: none;">About</a>
+                <a href="#gallery" class="mobile-link block w-full py-4 hover:bg-gray-100" style="user-select: none;">Gallery</a>
             </li>
             <li class="w-full text-center">
-                <a href="#gallery" class="mobile-link block w-full py-4 hover:bg-gray-100"
-                    style="user-select: none;">Gallery</a>
-            </li>
-            <li class="w-full text-center">
-                <a href="#project" class="mobile-link block w-full py-4 hover:bg-gray-100"
-                    style="user-select: none;">Project</a>
+                <a href="#project" class="mobile-link block w-full py-4 hover:bg-gray-100" style="user-select: none;">Project</a>
             </li>
             <li class="w-full text-center px-4 mt-4">
-                <button
-                    class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300 w-full"><a
-                        href="contact.html" style="user-select: none;">Contact<a></button>
+                <button class="mobile-link bg-[#010203] px-9 py-2 text-white hover:scale-[1.1] ease-in-out duration-300 w-full">
+                    <a href="contact.html" style="user-select: none;">Contact</a>
+                </button>
             </li>
         </ul>
     </div>
+
+
     <div id="back"></div>
+
+
     <section class="lg:block hidden w-screen pt-10 bg-white h-screen" id="hero">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="py-96 text-center">
@@ -101,7 +95,7 @@
                     — Web Developer | Designer —
                 </p>
                 <div class="flex flex-col md:flex-row justify-center items-center gap-5 pt-5">
-                    <a href="#"
+                    <a href="comingsoon.html"
                         class="flex items-center px-6 py-3 bg-white hover:scale-[1.08] hover:bg-[#010203] border border-black hover:text-white duration-300 ">
                         Download Resume
                     </a>
@@ -194,7 +188,19 @@
                                 style="user-select: none;">JQuery</span>
                             <span
                                 class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs"
-                                style="user-select: none;">AOS</span>
+                                style="user-select: none;">Figma</span>
+                            <span
+                                class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs"
+                                style="user-select: none;">Visual Studio Code</span>
+                            <span
+                                class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs"
+                                style="user-select: none;">NPM</span>
+                            <span
+                                class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs"
+                                style="user-select: none;">Git</span>
+                            <span
+                                class="border border-black text-black px-2 py-1 mx-1 my-2 hover:bg-black hover:text-white hover:scale-[1.1] ease-in-out duration-300 text-xs"
+                                style="user-select: none;">GitHub</span>
                         </div>
                     </div> <br>
 
@@ -212,13 +218,13 @@
     </div>
 
     <!-- Gallery -->
-    <section class="py-5" id="gallery">
+    <section class="" id="gallery">
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid gap-2.5 lg:pb-16 pb-10">
             </div>
             <div class="gallery">
                 <div class="flex flex-col mb-10">
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 lg:mb-11 mb-7">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 ">
                         <div class="md:col-span-4 h-[250px] sm:h-[300px] md:h-[404px] w-full">
                             <img src="assets/image4.png" alt="Gallery image"
                                 class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
@@ -244,12 +250,12 @@
 
     <!-- Project -->
     <section class="py-5" id="project">
-        <div class=" mx-auto px-4">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col">
                 <div class="line w-full bg-[#010203] h-[0.5px] mb-3" data-aos="fade-right" data-aos-duration="2000"
                     data-aos-delay="70"></div>
-                <span class="text-[#010203] text-base lg:text-xl font-light mb-2">This core area</span>
-                <h2 class="text-[#010203] text-4xl lg:text-7xl font-light mb-8">Our Work.</h2>
+                <span class="text-[#010203] text-base lg:text-xl font-light mb-2">This is the core area.</span>
+                <h2 class="text-[#010203] text-4xl lg:text-7xl font-normal mb-8">Our Work.</h2>
 
                 <div class="mb-5">
                     <div class="flex flex-col">
@@ -257,10 +263,26 @@
                             <img src="assets/image4.png" alt="Project image"
                                 class="object-cover hover:grayscale-0 grayscale transition-all duration-300 w-full h-full">
                         </div>
-                        <div class="flex mt-4">
-                            <div class="px-2 py-1 w-32 text-center border border-black cursor-pointer hover:bg-gray-50">
-                                See project.</div>
+                        <div class="flex mt-4 justify-between">
+                            <div class="px-2 py-1 w-32 text-center border border-black cursor-pointer hover:bg-[#010203] hover:text-white ease-in-out duration-300">
+                                <a href="#back">See project. </a>
+                            </div>
+                            <div class="technology flex space-x-2 hidden lg:flex">
+                                <div class="px-2 py-1 text-center border border-black">
+                                   HTML
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   CSS
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   JavaScript
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   Bootstrap 5
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
 
@@ -270,19 +292,52 @@
                             <img src="assets/image2.png" alt="Project image"
                                 class="object-cover hover:grayscale-0 grayscale transition-all duration-300 w-full h-full">
                         </div>
-                        <div class="flex mt-4">
-                            <div class="px-2 py-1 w-32 text-center border border-black cursor-pointer hover:bg-gray-50">
-                                See project.</div>
+                        <div class="flex mt-4 justify-between">
+                            <div class="px-2 py-1 w-32 text-center border border-black cursor-pointer hover:bg-[#010203] hover:text-white ease-in-out duration-300">
+                                <a href="#back">See project. </a>
+                            </div>
+                            <div class="technology flex space-x-2 hidden lg:flex">
+                                <div class="px-2 py-1 text-center border border-black">
+                                   HTML
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   CSS
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   JavaScript
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   Bootstrap 5
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
+
                     <div class="flex flex-col">
                         <div class="relative h-[250px] sm:h-[300px] md:h-[500px]">
                             <img src="assets/image3.png" alt="Project image"
                                 class="object-cover hover:grayscale-0 grayscale transition-all duration-300 w-full h-full">
                         </div>
-                        <div class="flex mt-4">
-                            <div class="px-2 py-1 w-32 text-center border border-black cursor-pointer hover:bg-gray-50">
-                                See project.</div>
+                        <div class="flex mt-4 justify-between">
+                            <div class="px-2 py-1 w-32 text-center border border-black cursor-pointer hover:bg-[#010203] hover:text-white ease-in-out duration-300">
+                                <a href="#back">See project. </a>
+                            </div>
+                            <div class="technology flex space-x-2 hidden lg:flex">
+                                <div class="px-2 py-1 text-center border border-black">
+                                   HTML
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   CSS
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   JavaScript
+                                </div>
+                                <div class="px-2 py-1 text-center border border-black">
+                                   Bootstrap 5
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -297,8 +352,7 @@
     <footer class="w-full h-screen bg-[#010203]">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
             <div class="text-center">
-                <h3 class="text-5xl text-white font-bold mb-4" style="user-select: none;">Are you having problems or
-                    questions?</h3>
+                <h3 class="text-5xl text-white font-bold mb-4" style="user-select: none;">Thank you for viewing my portfolio.</h3>
             </div>
         </div>
         <div class="bg-[#010203] text-gray-200 h-10 w-full text-center pt-2">
