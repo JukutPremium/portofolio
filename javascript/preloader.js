@@ -15,14 +15,14 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var welcomeTyped = new Typed("#contact", {
-      strings: ['Contact.'],
-      typeSpeed: 150,
-      backSpeed: 150,
-      showCursor: false,
-      loop: false,
+      var welcomeTyped = new Typed("#contact", {
+        strings: ['Contact.'],
+        typeSpeed: 150,
+        backSpeed: 150,
+        showCursor: false,
+        loop: false,
+      });
     });
-  });
   
 document.addEventListener('DOMContentLoaded', function () {
     var welcomeTyped = new Typed("#welcome", {
